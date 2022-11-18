@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Gabriel Nicholauson">
+        <meta name="description" content="alarm clock">
+        <meta name="keywords" content="HTML, CSS, SEO, web, web developpement">
+        <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
+        <link rel="stylesheet" href="assets/style/index.css" media="all">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" 
+        />
+        <title>Alarm clock</title>
+        <script src="assets/script/index.js" defer></script>
+    </head>
+    <body>
+        <main class="grid-layout">
+            <div class="container">
+                <section class="current-time">
+                    <p>10:32:54</p>
+                </section>
+                <section class="set-time">
+                    <p class="bell"><i class="fa-solid fa-bell"></i></p>
+                    <p class="time"></p>
+                </section>
+                <section class="user-inputs">
+                    <form>
+                        <input type="text" placeholder="7:30" class="enter-time">
+                        <input type="button" value="Set alarm" class="set-alarm">
+                    </form>
+                </section>
+            </div>
+            
+            <article class="credit">
+                <p>Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=104243">Pixabay</a></p>
+            </article>
+        </main>
+    </body>
+</html>
