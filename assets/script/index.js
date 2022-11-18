@@ -33,7 +33,7 @@ function alarmTime() {
 
 function validTime () {
     const timeRegex = /^([0-1][0-9]|2[0-3]):([0-5][0-9])(:[0-5][0-9])?$/;
-    if (enterTimeValue().length > 0 && timeRegex.test(enterTimeValue())) {
+    if (timeRegex.test(enterTimeValue())) {
         return true;
     } else {
         return false;
@@ -50,6 +50,10 @@ function playAlarm() {
         setTime.innerHTML === currentTime.innerHTML.substring(0, 5)) {
             alarmSound.volume = 0.1;
             alarmSound.play();
-            setTime.innerHTML = '';
+            resetSetTime();
     }
+}
+
+function resetSetTime() {
+    setTime.innerHTML = '';
 }
